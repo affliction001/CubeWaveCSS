@@ -1,0 +1,1375 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: black;
+	overflow: hidden;
+}
+
+.row1 {
+	position: relative;
+}
+
+.cube {
+	position: relative;
+}
+
+.f_wall {
+	position: absolute;
+	background: #555;
+	width: 40px;
+	height: 12px;
+	top: 20px;
+	left: 0;
+}
+
+.t_wall {
+	position: absolute;
+	background: #777;
+	width: 40px;
+	height: 20px;
+	top: 0;
+	left: 0;
+	transform: skewX(-45deg);
+	transform-origin: 0% 100%;
+}
+
+.r_wall {
+	position: absolute;
+	background: #333;
+	width: 20px;
+	height: 12px;
+	top: 20px;
+	left: 40px;
+	transform: skewY(-45deg);
+	transform-origin: 0% 0%;
+}
+
+.r1_c1 {left: 0;}
+.r1_c2 {left: 40px;}
+.r1_c3 {left: 80px;}
+.r1_c4 {left: 120px;}
+.r1_c5 {left: 160px;}
+.r1_c6 {left: 200px;}
+.r1_c7 {left: 240px;}
+.r1_c8 {left: 280px;}
+.r1_c9 {left: 320px;}
+.r1_c10 {left: 360px;}
+.r1_c11 {left: 400px;}
+.r1_c12 {left: 440px;}
+.r1_c13 {left: 480px;}
+.r1_c14 {left: 520px;}
+.r1_c15 {left: 560px;}
+.r1_c16 {left: 600px;}
+.r1_c17 {left: 640px;}
+.r1_c18 {left: 680px;}
+.r1_c19 {left: 720px;}
+.r1_c20 {left: 760px;}
+
+.row2 {
+	position: relative;
+	top: 20px;
+}
+
+.r2_c1 {left: 0;}
+.r2_c2 {left: 40px;}
+.r2_c3 {left: 80px;}
+.r2_c4 {left: 120px;}
+.r2_c5 {left: 160px;}
+.r2_c6 {left: 200px;}
+.r2_c7 {left: 240px;}
+.r2_c8 {left: 280px;}
+.r2_c9 {left: 320px;}
+.r2_c10 {left: 360px;}
+.r2_c11 {left: 400px;}
+.r2_c12 {left: 440px;}
+.r2_c13 {left: 480px;}
+.r2_c14 {left: 520px;}
+.r2_c15 {left: 560px;}
+.r2_c16 {left: 600px;}
+.r2_c17 {left: 640px;}
+.r2_c18 {left: 680px;}
+.r2_c19 {left: 720px;}
+.r2_c20 {left: 760px;}
+
+.row3 {
+	position: relative;
+	top: 40px;
+}
+
+.r3_c1 {left: 0;}
+.r3_c2 {left: 40px;}
+.r3_c3 {left: 80px;}
+.r3_c4 {left: 120px;}
+.r3_c5 {left: 160px;}
+.r3_c6 {left: 200px;}
+.r3_c7 {left: 240px;}
+.r3_c8 {left: 280px;}
+.r3_c9 {left: 320px;}
+.r3_c10 {left: 360px;}
+.r3_c11 {left: 400px;}
+.r3_c12 {left: 440px;}
+.r3_c13 {left: 480px;}
+.r3_c14 {left: 520px;}
+.r3_c15 {left: 560px;}
+.r3_c16 {left: 600px;}
+.r3_c17 {left: 640px;}
+.r3_c18 {left: 680px;}
+.r3_c19 {left: 720px;}
+.r3_c20 {left: 760px;}
+
+.row4 {
+	position: relative;
+	top: 60px;
+}
+
+.r4_c1 {left: 0;}
+.r4_c2 {left: 40px;}
+.r4_c3 {left: 80px;}
+.r4_c4 {left: 120px;}
+.r4_c5 {left: 160px;}
+.r4_c6 {left: 200px;}
+.r4_c7 {left: 240px;}
+.r4_c8 {left: 280px;}
+.r4_c9 {left: 320px;}
+.r4_c10 {left: 360px;}
+.r4_c11 {left: 400px;}
+.r4_c12 {left: 440px;}
+.r4_c13 {left: 480px;}
+.r4_c14 {left: 520px;}
+.r4_c15 {left: 560px;}
+.r4_c16 {left: 600px;}
+.r4_c17 {left: 640px;}
+.r4_c18 {left: 680px;}
+.r4_c19 {left: 720px;}
+.r4_c20 {left: 760px;}
+
+.row5 {
+	position: relative;
+	top: 80px;
+}
+
+.r5_c1 {left: 0;}
+.r5_c2 {left: 40px;}
+.r5_c3 {left: 80px;}
+.r5_c4 {left: 120px;}
+.r5_c5 {left: 160px;}
+.r5_c6 {left: 200px;}
+.r5_c7 {left: 240px;}
+.r5_c8 {left: 280px;}
+.r5_c9 {left: 320px;}
+.r5_c10 {left: 360px;}
+.r5_c11 {left: 400px;}
+.r5_c12 {left: 440px;}
+.r5_c13 {left: 480px;}
+.r5_c14 {left: 520px;}
+.r5_c15 {left: 560px;}
+.r5_c16 {left: 600px;}
+.r5_c17 {left: 640px;}
+.r5_c18 {left: 680px;}
+.r5_c19 {left: 720px;}
+.r5_c20 {left: 760px;}
+
+.row6 {
+	position: relative;
+	top: 100px;
+}
+
+.r6_c1 {left: 0;}
+.r6_c2 {left: 40px;}
+.r6_c3 {left: 80px;}
+.r6_c4 {left: 120px;}
+.r6_c5 {left: 160px;}
+.r6_c6 {left: 200px;}
+.r6_c7 {left: 240px;}
+.r6_c8 {left: 280px;}
+.r6_c9 {left: 320px;}
+.r6_c10 {left: 360px;}
+.r6_c11 {left: 400px;}
+.r6_c12 {left: 440px;}
+.r6_c13 {left: 480px;}
+.r6_c14 {left: 520px;}
+.r6_c15 {left: 560px;}
+.r6_c16 {left: 600px;}
+.r6_c17 {left: 640px;}
+.r6_c18 {left: 680px;}
+.r6_c19 {left: 720px;}
+.r6_c20 {left: 760px;}
+
+.row7 {
+	position: relative;
+	top: 120px;
+}
+
+.r7_c1 {left: 0;}
+.r7_c2 {left: 40px;}
+.r7_c3 {left: 80px;}
+.r7_c4 {left: 120px;}
+.r7_c5 {left: 160px;}
+.r7_c6 {left: 200px;}
+.r7_c7 {left: 240px;}
+.r7_c8 {left: 280px;}
+.r7_c9 {left: 320px;}
+.r7_c10 {left: 360px;}
+.r7_c11 {left: 400px;}
+.r7_c12 {left: 440px;}
+.r7_c13 {left: 480px;}
+.r7_c14 {left: 520px;}
+.r7_c15 {left: 560px;}
+.r7_c16 {left: 600px;}
+.r7_c17 {left: 640px;}
+.r7_c18 {left: 680px;}
+.r7_c19 {left: 720px;}
+.r7_c20 {left: 760px;}
+
+.row8 {
+	position: relative;
+	top: 140px;
+}
+
+.r8_c1 {left: 0;}
+.r8_c2 {left: 40px;}
+.r8_c3 {left: 80px;}
+.r8_c4 {left: 120px;}
+.r8_c5 {left: 160px;}
+.r8_c6 {left: 200px;}
+.r8_c7 {left: 240px;}
+.r8_c8 {left: 280px;}
+.r8_c9 {left: 320px;}
+.r8_c10 {left: 360px;}
+.r8_c11 {left: 400px;}
+.r8_c12 {left: 440px;}
+.r8_c13 {left: 480px;}
+.r8_c14 {left: 520px;}
+.r8_c15 {left: 560px;}
+.r8_c16 {left: 600px;}
+.r8_c17 {left: 640px;}
+.r8_c18 {left: 680px;}
+.r8_c19 {left: 720px;}
+.r8_c20 {left: 760px;}
+
+.row9 {
+	position: relative;
+	top: 160px;
+}
+
+.r9_c1 {left: 0;}
+.r9_c2 {left: 40px;}
+.r9_c3 {left: 80px;}
+.r9_c4 {left: 120px;}
+.r9_c5 {left: 160px;}
+.r9_c6 {left: 200px;}
+.r9_c7 {left: 240px;}
+.r9_c8 {left: 280px;}
+.r9_c9 {left: 320px;}
+.r9_c10 {left: 360px;}
+.r9_c11 {left: 400px;}
+.r9_c12 {left: 440px;}
+.r9_c13 {left: 480px;}
+.r9_c14 {left: 520px;}
+.r9_c15 {left: 560px;}
+.r9_c16 {left: 600px;}
+.r9_c17 {left: 640px;}
+.r9_c18 {left: 680px;}
+.r9_c19 {left: 720px;}
+.r9_c20 {left: 760px;}
+
+.row10 {
+	position: relative;
+	top: 180px;
+}
+
+.r10_c1 {left: 0;}
+.r10_c2 {left: 40px;}
+.r10_c3 {left: 80px;}
+.r10_c4 {left: 120px;}
+.r10_c5 {left: 160px;}
+.r10_c6 {left: 200px;}
+.r10_c7 {left: 240px;}
+.r10_c8 {left: 280px;}
+.r10_c9 {left: 320px;}
+.r10_c10 {left: 360px;}
+.r10_c11 {left: 400px;}
+.r10_c12 {left: 440px;}
+.r10_c13 {left: 480px;}
+.r10_c14 {left: 520px;}
+.r10_c15 {left: 560px;}
+.r10_c16 {left: 600px;}
+.r10_c17 {left: 640px;}
+.r10_c18 {left: 680px;}
+.r10_c19 {left: 720px;}
+.r10_c20 {left: 760px;}
+
+@keyframes engine {
+	from {transform: translateY(0);}
+	50% {transform: translateY(400px);}
+	to {transform: translateY(0);}
+}
+
+.r10_c20 {animation: engine 4s infinite ease;}
+.r10_c19 {animation: engine 4s 100ms infinite ease;}
+.r10_c18 {animation: engine 4s 200ms infinite ease;}
+.r10_c17 {animation: engine 4s 300ms infinite ease;}
+.r10_c16 {animation: engine 4s 400ms infinite ease;}
+.r10_c15 {animation: engine 4s 500ms infinite ease;}
+.r10_c14 {animation: engine 4s 600ms infinite ease;}
+.r10_c13 {animation: engine 4s 700ms infinite ease;}
+.r10_c12 {animation: engine 4s 800ms infinite ease;}
+.r10_c11 {animation: engine 4s 900ms infinite ease;}
+.r10_c10 {animation: engine 4s 1000ms infinite ease;}
+.r10_c9 {animation: engine 4s 1100ms infinite ease;}
+.r10_c8 {animation: engine 4s 1200ms infinite ease;}
+.r10_c7 {animation: engine 4s 1300ms infinite ease;}
+.r10_c6 {animation: engine 4s 1400ms infinite ease;}
+.r10_c5 {animation: engine 4s 1500ms infinite ease;}
+.r10_c4 {animation: engine 4s 1600ms infinite ease;}
+.r10_c3 {animation: engine 4s 1700ms infinite ease;}
+.r10_c2 {animation: engine 4s 1800ms infinite ease;}
+.r10_c1 {animation: engine 4s 1900ms infinite ease;}
+
+.r9_c20 {animation: engine 4s 200ms infinite ease;}
+.r9_c19 {animation: engine 4s 300ms infinite ease;}
+.r9_c18 {animation: engine 4s 400ms infinite ease;}
+.r9_c17 {animation: engine 4s 500ms infinite ease;}
+.r9_c16 {animation: engine 4s 600ms infinite ease;}
+.r9_c15 {animation: engine 4s 700ms infinite ease;}
+.r9_c14 {animation: engine 4s 800ms infinite ease;}
+.r9_c13 {animation: engine 4s 900ms infinite ease;}
+.r9_c12 {animation: engine 4s 1000ms infinite ease;}
+.r9_c11 {animation: engine 4s 1100ms infinite ease;}
+.r9_c10 {animation: engine 4s 1200ms infinite ease;}
+.r9_c9 {animation: engine 4s 1300ms infinite ease;}
+.r9_c8 {animation: engine 4s 1400ms infinite ease;}
+.r9_c7 {animation: engine 4s 1500ms infinite ease;}
+.r9_c6 {animation: engine 4s 1600ms infinite ease;}
+.r9_c5 {animation: engine 4s 1700ms infinite ease;}
+.r9_c4 {animation: engine 4s 1800ms infinite ease;}
+.r9_c3 {animation: engine 4s 1900ms infinite ease;}
+.r9_c2 {animation: engine 4s 2000ms infinite ease;}
+.r9_c1 {animation: engine 4s 2100ms infinite ease;}
+
+.r8_c20 {animation: engine 4s 400ms infinite ease;}
+.r8_c19 {animation: engine 4s 500ms infinite ease;}
+.r8_c18 {animation: engine 4s 600ms infinite ease;}
+.r8_c17 {animation: engine 4s 700ms infinite ease;}
+.r8_c16 {animation: engine 4s 800ms infinite ease;}
+.r8_c15 {animation: engine 4s 900ms infinite ease;}
+.r8_c14 {animation: engine 4s 1000ms infinite ease;}
+.r8_c13 {animation: engine 4s 1100ms infinite ease;}
+.r8_c12 {animation: engine 4s 1200ms infinite ease;}
+.r8_c11 {animation: engine 4s 1300ms infinite ease;}
+.r8_c10 {animation: engine 4s 1400ms infinite ease;}
+.r8_c9 {animation: engine 4s 1500ms infinite ease;}
+.r8_c8 {animation: engine 4s 1600ms infinite ease;}
+.r8_c7 {animation: engine 4s 1700ms infinite ease;}
+.r8_c6 {animation: engine 4s 1800ms infinite ease;}
+.r8_c5 {animation: engine 4s 1900ms infinite ease;}
+.r8_c4 {animation: engine 4s 2000ms infinite ease;}
+.r8_c3 {animation: engine 4s 2100ms infinite ease;}
+.r8_c2 {animation: engine 4s 2200ms infinite ease;}
+.r8_c1 {animation: engine 4s 2300ms infinite ease;}
+
+.r7_c20 {animation: engine 4s 600ms infinite ease;}
+.r7_c19 {animation: engine 4s 700ms infinite ease;}
+.r7_c18 {animation: engine 4s 800ms infinite ease;}
+.r7_c17 {animation: engine 4s 900ms infinite ease;}
+.r7_c16 {animation: engine 4s 1000ms infinite ease;}
+.r7_c15 {animation: engine 4s 1100ms infinite ease;}
+.r7_c14 {animation: engine 4s 1200ms infinite ease;}
+.r7_c13 {animation: engine 4s 1300ms infinite ease;}
+.r7_c12 {animation: engine 4s 1400ms infinite ease;}
+.r7_c11 {animation: engine 4s 1500ms infinite ease;}
+.r7_c10 {animation: engine 4s 1600ms infinite ease;}
+.r7_c9 {animation: engine 4s 1700ms infinite ease;}
+.r7_c8 {animation: engine 4s 1800ms infinite ease;}
+.r7_c7 {animation: engine 4s 1900ms infinite ease;}
+.r7_c6 {animation: engine 4s 2000ms infinite ease;}
+.r7_c5 {animation: engine 4s 2100ms infinite ease;}
+.r7_c4 {animation: engine 4s 2200ms infinite ease;}
+.r7_c3 {animation: engine 4s 2300ms infinite ease;}
+.r7_c2 {animation: engine 4s 2400ms infinite ease;}
+.r7_c1 {animation: engine 4s 2500ms infinite ease;}
+
+.r6_c20 {animation: engine 4s 800ms infinite ease;}
+.r6_c19 {animation: engine 4s 900ms infinite ease;}
+.r6_c18 {animation: engine 4s 1000ms infinite ease;}
+.r6_c17 {animation: engine 4s 1100ms infinite ease;}
+.r6_c16 {animation: engine 4s 1200ms infinite ease;}
+.r6_c15 {animation: engine 4s 1300ms infinite ease;}
+.r6_c14 {animation: engine 4s 1400ms infinite ease;}
+.r6_c13 {animation: engine 4s 1500ms infinite ease;}
+.r6_c12 {animation: engine 4s 1600ms infinite ease;}
+.r6_c11 {animation: engine 4s 1700ms infinite ease;}
+.r6_c10 {animation: engine 4s 1800ms infinite ease;}
+.r6_c9 {animation: engine 4s 1900ms infinite ease;}
+.r6_c8 {animation: engine 4s 2000ms infinite ease;}
+.r6_c7 {animation: engine 4s 2100ms infinite ease;}
+.r6_c6 {animation: engine 4s 2200ms infinite ease;}
+.r6_c5 {animation: engine 4s 2300ms infinite ease;}
+.r6_c4 {animation: engine 4s 2400ms infinite ease;}
+.r6_c3 {animation: engine 4s 2500ms infinite ease;}
+.r6_c2 {animation: engine 4s 2600ms infinite ease;}
+.r6_c1 {animation: engine 4s 2700ms infinite ease;}
+
+.r5_c20 {animation: engine 4s 1000ms infinite ease;}
+.r5_c19 {animation: engine 4s 1100ms infinite ease;}
+.r5_c18 {animation: engine 4s 1200ms infinite ease;}
+.r5_c17 {animation: engine 4s 1300ms infinite ease;}
+.r5_c16 {animation: engine 4s 1400ms infinite ease;}
+.r5_c15 {animation: engine 4s 1500ms infinite ease;}
+.r5_c14 {animation: engine 4s 1600ms infinite ease;}
+.r5_c13 {animation: engine 4s 1700ms infinite ease;}
+.r5_c12 {animation: engine 4s 1800ms infinite ease;}
+.r5_c11 {animation: engine 4s 1900ms infinite ease;}
+.r5_c10 {animation: engine 4s 2000ms infinite ease;}
+.r5_c9 {animation: engine 4s 2100ms infinite ease;}
+.r5_c8 {animation: engine 4s 2200ms infinite ease;}
+.r5_c7 {animation: engine 4s 2300ms infinite ease;}
+.r5_c6 {animation: engine 4s 2400ms infinite ease;}
+.r5_c5 {animation: engine 4s 2500ms infinite ease;}
+.r5_c4 {animation: engine 4s 2600ms infinite ease;}
+.r5_c3 {animation: engine 4s 2700ms infinite ease;}
+.r5_c2 {animation: engine 4s 2800ms infinite ease;}
+.r5_c1 {animation: engine 4s 2900ms infinite ease;}
+
+.r4_c20 {animation: engine 4s 1200ms infinite ease;}
+.r4_c19 {animation: engine 4s 1300ms infinite ease;}
+.r4_c18 {animation: engine 4s 1400ms infinite ease;}
+.r4_c17 {animation: engine 4s 1500ms infinite ease;}
+.r4_c16 {animation: engine 4s 1600ms infinite ease;}
+.r4_c15 {animation: engine 4s 1700ms infinite ease;}
+.r4_c14 {animation: engine 4s 1800ms infinite ease;}
+.r4_c13 {animation: engine 4s 1900ms infinite ease;}
+.r4_c12 {animation: engine 4s 2000ms infinite ease;}
+.r4_c11 {animation: engine 4s 2100ms infinite ease;}
+.r4_c10 {animation: engine 4s 2200ms infinite ease;}
+.r4_c9 {animation: engine 4s 2300ms infinite ease;}
+.r4_c8 {animation: engine 4s 2400ms infinite ease;}
+.r4_c7 {animation: engine 4s 2500ms infinite ease;}
+.r4_c6 {animation: engine 4s 2600ms infinite ease;}
+.r4_c5 {animation: engine 4s 2700ms infinite ease;}
+.r4_c4 {animation: engine 4s 2800ms infinite ease;}
+.r4_c3 {animation: engine 4s 2900ms infinite ease;}
+.r4_c2 {animation: engine 4s 3000ms infinite ease;}
+.r4_c1 {animation: engine 4s 3100ms infinite ease;}
+
+.r3_c20 {animation: engine 4s 1400ms infinite ease;}
+.r3_c19 {animation: engine 4s 1500ms infinite ease;}
+.r3_c18 {animation: engine 4s 1600ms infinite ease;}
+.r3_c17 {animation: engine 4s 1700ms infinite ease;}
+.r3_c16 {animation: engine 4s 1800ms infinite ease;}
+.r3_c15 {animation: engine 4s 1900ms infinite ease;}
+.r3_c14 {animation: engine 4s 2000ms infinite ease;}
+.r3_c13 {animation: engine 4s 2100ms infinite ease;}
+.r3_c12 {animation: engine 4s 2200ms infinite ease;}
+.r3_c11 {animation: engine 4s 2300ms infinite ease;}
+.r3_c10 {animation: engine 4s 2400ms infinite ease;}
+.r3_c9 {animation: engine 4s 2500ms infinite ease;}
+.r3_c8 {animation: engine 4s 2600ms infinite ease;}
+.r3_c7 {animation: engine 4s 2700ms infinite ease;}
+.r3_c6 {animation: engine 4s 2800ms infinite ease;}
+.r3_c5 {animation: engine 4s 2900ms infinite ease;}
+.r3_c4 {animation: engine 4s 3000ms infinite ease;}
+.r3_c3 {animation: engine 4s 3100ms infinite ease;}
+.r3_c2 {animation: engine 4s 3200ms infinite ease;}
+.r3_c1 {animation: engine 4s 3300ms infinite ease;}
+
+.r2_c20 {animation: engine 4s 1600ms infinite ease;}
+.r2_c19 {animation: engine 4s 1700ms infinite ease;}
+.r2_c18 {animation: engine 4s 1800ms infinite ease;}
+.r2_c17 {animation: engine 4s 1900ms infinite ease;}
+.r2_c16 {animation: engine 4s 2000ms infinite ease;}
+.r2_c15 {animation: engine 4s 2100ms infinite ease;}
+.r2_c14 {animation: engine 4s 2200ms infinite ease;}
+.r2_c13 {animation: engine 4s 2300ms infinite ease;}
+.r2_c12 {animation: engine 4s 2400ms infinite ease;}
+.r2_c11 {animation: engine 4s 2500ms infinite ease;}
+.r2_c10 {animation: engine 4s 2600ms infinite ease;}
+.r2_c9 {animation: engine 4s 2700ms infinite ease;}
+.r2_c8 {animation: engine 4s 2800ms infinite ease;}
+.r2_c7 {animation: engine 4s 2900ms infinite ease;}
+.r2_c6 {animation: engine 4s 3000ms infinite ease;}
+.r2_c5 {animation: engine 4s 3100ms infinite ease;}
+.r2_c4 {animation: engine 4s 3200ms infinite ease;}
+.r2_c3 {animation: engine 4s 3300ms infinite ease;}
+.r2_c2 {animation: engine 4s 3400ms infinite ease;}
+.r2_c1 {animation: engine 4s 3500ms infinite ease;}
+
+.r1_c20 {animation: engine 4s 1800ms infinite ease;}
+.r1_c19 {animation: engine 4s 1900ms infinite ease;}
+.r1_c18 {animation: engine 4s 2000ms infinite ease;}
+.r1_c17 {animation: engine 4s 2100ms infinite ease;}
+.r1_c16 {animation: engine 4s 2200ms infinite ease;}
+.r1_c15 {animation: engine 4s 2300ms infinite ease;}
+.r1_c14 {animation: engine 4s 2400ms infinite ease;}
+.r1_c13 {animation: engine 4s 2500ms infinite ease;}
+.r1_c12 {animation: engine 4s 2600ms infinite ease;}
+.r1_c11 {animation: engine 4s 2700ms infinite ease;}
+.r1_c10 {animation: engine 4s 2800ms infinite ease;}
+.r1_c9 {animation: engine 4s 2900ms infinite ease;}
+.r1_c8 {animation: engine 4s 3000ms infinite ease;}
+.r1_c7 {animation: engine 4s 3100ms infinite ease;}
+.r1_c6 {animation: engine 4s 3200ms infinite ease;}
+.r1_c5 {animation: engine 4s 3300ms infinite ease;}
+.r1_c4 {animation: engine 4s 3400ms infinite ease;}
+.r1_c3 {animation: engine 4s 3500ms infinite ease;}
+.r1_c2 {animation: engine 4s 3600ms infinite ease;}
+.r1_c1 {animation: engine 4s 3700ms infinite ease;}
+
+@keyframes movec {
+	from {transform: translate(-800px, -500px);}
+	to {transform: translate(110vw, 100vh);}
+}
+
+.container {
+	animation: movec 40s infinite linear;
+}
+
+@keyframes twall {
+	from {background: #f00;}
+	20% {background: #0f0;}
+	40% {background: #00f;}
+	60% {background: #f00;}
+	80% {background: #0f0;}
+	to {background: #00f;}
+}
+
+@keyframes fwall {
+	from {background: #a00;}
+	20% {background: #0a0;}
+	40% {background: #00a;}
+	60% {background: #a00;}
+	80% {background: #0a0;}
+	to {background: #00a;}
+}
+
+@keyframes rwall {
+	from {background: #700;}
+	20% {background: #070;}
+	40% {background: #007;}
+	60% {background: #700;}
+	80% {background: #070;}
+	to {background: #007;}
+}
+
+/*=============== ROW 10 =============*/
+
+.r10_c20 .f_wall {animation: fwall 4s infinite ease;}
+.r10_c20 .t_wall {animation: twall 4s infinite ease;}
+.r10_c20 .r_wall {animation: rwall 4s infinite ease;}
+
+.r10_c19 .f_wall {animation: fwall 4s 100ms infinite ease;}
+.r10_c19 .t_wall {animation: twall 4s 100ms infinite ease;}
+.r10_c19 .r_wall {animation: rwall 4s 100ms infinite ease;}
+
+.r10_c18 .f_wall {animation: fwall 4s 200ms infinite ease;}
+.r10_c18 .t_wall {animation: twall 4s 200ms infinite ease;}
+.r10_c18 .r_wall {animation: rwall 4s 200ms infinite ease;}
+
+.r10_c17 .f_wall {animation: fwall 4s 300ms infinite ease;}
+.r10_c17 .t_wall {animation: twall 4s 300ms infinite ease;}
+.r10_c17 .r_wall {animation: rwall 4s 300ms infinite ease;}
+
+.r10_c16 .f_wall {animation: fwall 4s 400ms infinite ease;}
+.r10_c16 .t_wall {animation: twall 4s 400ms infinite ease;}
+.r10_c16 .r_wall {animation: rwall 4s 400ms infinite ease;}
+
+.r10_c15 .f_wall {animation: fwall 4s 500ms infinite ease;}
+.r10_c15 .t_wall {animation: twall 4s 500ms infinite ease;}
+.r10_c15 .r_wall {animation: rwall 4s 500ms infinite ease;}
+
+.r10_c14 .f_wall {animation: fwall 4s 600ms infinite ease;}
+.r10_c14 .t_wall {animation: twall 4s 600ms infinite ease;}
+.r10_c14 .r_wall {animation: rwall 4s 600ms infinite ease;}
+
+.r10_c13 .f_wall {animation: fwall 4s 700ms infinite ease;}
+.r10_c13 .t_wall {animation: twall 4s 700ms infinite ease;}
+.r10_c13 .r_wall {animation: rwall 4s 700ms infinite ease;}
+
+.r10_c12 .f_wall {animation: fwall 4s 800ms infinite ease;}
+.r10_c12 .t_wall {animation: twall 4s 800ms infinite ease;}
+.r10_c12 .r_wall {animation: rwall 4s 800ms infinite ease;}
+
+.r10_c11 .f_wall {animation: fwall 4s 900ms infinite ease;}
+.r10_c11 .t_wall {animation: twall 4s 900ms infinite ease;}
+.r10_c11 .r_wall {animation: rwall 4s 900ms infinite ease;}
+
+.r10_c10 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r10_c10 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r10_c10 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r10_c9 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r10_c9 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r10_c9 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r10_c8 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r10_c8 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r10_c8 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r10_c7 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r10_c7 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r10_c7 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r10_c6 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r10_c6 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r10_c6 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r10_c5 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r10_c5 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r10_c5 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r10_c4 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r10_c4 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r10_c4 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r10_c3 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r10_c3 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r10_c3 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r10_c2 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r10_c2 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r10_c2 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r10_c1 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r10_c1 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r10_c1 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+/*=========== ROW 9 =============*/
+
+.r9_c20 .f_wall {animation: fwall 4s 200ms infinite ease;}
+.r9_c20 .t_wall {animation: twall 4s 200ms infinite ease;}
+.r9_c20 .r_wall {animation: rwall 4s 200ms infinite ease;}
+
+.r9_c19 .f_wall {animation: fwall 4s 300ms infinite ease;}
+.r9_c19 .t_wall {animation: twall 4s 300ms infinite ease;}
+.r9_c19 .r_wall {animation: rwall 4s 300ms infinite ease;}
+
+.r9_c18 .f_wall {animation: fwall 4s 400ms infinite ease;}
+.r9_c18 .t_wall {animation: twall 4s 400ms infinite ease;}
+.r9_c18 .r_wall {animation: rwall 4s 400ms infinite ease;}
+
+.r9_c17 .f_wall {animation: fwall 4s 500ms infinite ease;}
+.r9_c17 .t_wall {animation: twall 4s 500ms infinite ease;}
+.r9_c17 .r_wall {animation: rwall 4s 500ms infinite ease;}
+
+.r9_c16 .f_wall {animation: fwall 4s 600ms infinite ease;}
+.r9_c16 .t_wall {animation: twall 4s 600ms infinite ease;}
+.r9_c16 .r_wall {animation: rwall 4s 600ms infinite ease;}
+
+.r9_c15 .f_wall {animation: fwall 4s 700ms infinite ease;}
+.r9_c15 .t_wall {animation: twall 4s 700ms infinite ease;}
+.r9_c15 .r_wall {animation: rwall 4s 700ms infinite ease;}
+
+.r9_c14 .f_wall {animation: fwall 4s 800ms infinite ease;}
+.r9_c14 .t_wall {animation: twall 4s 800ms infinite ease;}
+.r9_c14 .r_wall {animation: rwall 4s 800ms infinite ease;}
+
+.r9_c13 .f_wall {animation: fwall 4s 900ms infinite ease;}
+.r9_c13 .t_wall {animation: twall 4s 900ms infinite ease;}
+.r9_c13 .r_wall {animation: rwall 4s 900ms infinite ease;}
+
+.r9_c12 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r9_c12 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r9_c12 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r9_c11 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r9_c11 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r9_c11 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r9_c10 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r9_c10 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r9_c10 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r9_c9 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r9_c9 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r9_c9 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r9_c8 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r9_c8 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r9_c8 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r9_c7 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r9_c7 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r9_c7 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r9_c6 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r9_c6 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r9_c6 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r9_c5 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r9_c5 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r9_c5 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r9_c4 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r9_c4 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r9_c4 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r9_c3 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r9_c3 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r9_c3 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r9_c2 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r9_c2 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r9_c2 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r9_c1 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r9_c1 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r9_c1 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+/*=========== ROW 8 =============*/
+
+.r8_c20 .f_wall {animation: fwall 4s 400ms infinite ease;}
+.r8_c20 .t_wall {animation: twall 4s 400ms infinite ease;}
+.r8_c20 .r_wall {animation: rwall 4s 400ms infinite ease;}
+
+.r8_c19 .f_wall {animation: fwall 4s 500ms infinite ease;}
+.r8_c19 .t_wall {animation: twall 4s 500ms infinite ease;}
+.r8_c19 .r_wall {animation: rwall 4s 500ms infinite ease;}
+
+.r8_c18 .f_wall {animation: fwall 4s 600ms infinite ease;}
+.r8_c18 .t_wall {animation: twall 4s 600ms infinite ease;}
+.r8_c18 .r_wall {animation: rwall 4s 600ms infinite ease;}
+
+.r8_c17 .f_wall {animation: fwall 4s 700ms infinite ease;}
+.r8_c17 .t_wall {animation: twall 4s 700ms infinite ease;}
+.r8_c17 .r_wall {animation: rwall 4s 700ms infinite ease;}
+
+.r8_c16 .f_wall {animation: fwall 4s 800ms infinite ease;}
+.r8_c16 .t_wall {animation: twall 4s 800ms infinite ease;}
+.r8_c16 .r_wall {animation: rwall 4s 800ms infinite ease;}
+
+.r8_c15 .f_wall {animation: fwall 4s 900ms infinite ease;}
+.r8_c15 .t_wall {animation: twall 4s 900ms infinite ease;}
+.r8_c15 .r_wall {animation: rwall 4s 900ms infinite ease;}
+
+.r8_c14 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r8_c14 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r8_c14 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r8_c13 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r8_c13 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r8_c13 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r8_c12 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r8_c12 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r8_c12 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r8_c11 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r8_c11 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r8_c11 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r8_c10 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r8_c10 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r8_c10 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r8_c9 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r8_c9 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r8_c9 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r8_c8 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r8_c8 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r8_c8 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r8_c7 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r8_c7 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r8_c7 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r8_c6 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r8_c6 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r8_c6 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r8_c5 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r8_c5 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r8_c5 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r8_c4 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r8_c4 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r8_c4 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r8_c3 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r8_c3 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r8_c3 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r8_c2 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r8_c2 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r8_c2 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r8_c1 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r8_c1 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r8_c1 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+/*=========== ROW 7 =============*/
+
+.r7_c20 .f_wall {animation: fwall 4s 600ms infinite ease;}
+.r7_c20 .t_wall {animation: twall 4s 600ms infinite ease;}
+.r7_c20 .r_wall {animation: rwall 4s 600ms infinite ease;}
+
+.r7_c19 .f_wall {animation: fwall 4s 700ms infinite ease;}
+.r7_c19 .t_wall {animation: twall 4s 700ms infinite ease;}
+.r7_c19 .r_wall {animation: rwall 4s 700ms infinite ease;}
+
+.r7_c18 .f_wall {animation: fwall 4s 800ms infinite ease;}
+.r7_c18 .t_wall {animation: twall 4s 800ms infinite ease;}
+.r7_c18 .r_wall {animation: rwall 4s 800ms infinite ease;}
+
+.r7_c17 .f_wall {animation: fwall 4s 900ms infinite ease;}
+.r7_c17 .t_wall {animation: twall 4s 900ms infinite ease;}
+.r7_c17 .r_wall {animation: rwall 4s 900ms infinite ease;}
+
+.r7_c16 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r7_c16 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r7_c16 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r7_c15 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r7_c15 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r7_c15 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r7_c14 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r7_c14 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r7_c14 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r7_c13 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r7_c13 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r7_c13 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r7_c12 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r7_c12 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r7_c12 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r7_c11 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r7_c11 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r7_c11 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r7_c10 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r7_c10 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r7_c10 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r7_c9 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r7_c9 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r7_c9 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r7_c8 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r7_c8 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r7_c8 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r7_c7 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r7_c7 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r7_c7 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r7_c6 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r7_c6 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r7_c6 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r7_c5 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r7_c5 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r7_c5 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r7_c4 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r7_c4 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r7_c4 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r7_c3 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r7_c3 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r7_c3 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r7_c2 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r7_c2 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r7_c2 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r7_c1 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r7_c1 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r7_c1 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+/*=========== ROW 6 =============*/
+
+.r6_c20 .f_wall {animation: fwall 4s 800ms infinite ease;}
+.r6_c20 .t_wall {animation: twall 4s 800ms infinite ease;}
+.r6_c20 .r_wall {animation: rwall 4s 800ms infinite ease;}
+
+.r6_c19 .f_wall {animation: fwall 4s 900ms infinite ease;}
+.r6_c19 .t_wall {animation: twall 4s 900ms infinite ease;}
+.r6_c19 .r_wall {animation: rwall 4s 900ms infinite ease;}
+
+.r6_c18 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r6_c18 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r6_c18 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r6_c17 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r6_c17 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r6_c17 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r6_c16 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r6_c16 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r6_c16 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r6_c15 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r6_c15 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r6_c15 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r6_c14 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r6_c14 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r6_c14 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r6_c13 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r6_c13 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r6_c13 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r6_c12 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r6_c12 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r6_c12 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r6_c11 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r6_c11 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r6_c11 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r6_c10 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r6_c10 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r6_c10 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r6_c9 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r6_c9 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r6_c9 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r6_c8 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r6_c8 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r6_c8 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r6_c7 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r6_c7 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r6_c7 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r6_c6 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r6_c6 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r6_c6 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r6_c5 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r6_c5 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r6_c5 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r6_c4 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r6_c4 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r6_c4 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r6_c3 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r6_c3 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r6_c3 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r6_c2 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r6_c2 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r6_c2 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r6_c1 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r6_c1 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r6_c1 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+/*=========== ROW 5 =============*/
+
+.r5_c20 .f_wall {animation: fwall 4s 1000ms infinite ease;}
+.r5_c20 .t_wall {animation: twall 4s 1000ms infinite ease;}
+.r5_c20 .r_wall {animation: rwall 4s 1000ms infinite ease;}
+
+.r5_c19 .f_wall {animation: fwall 4s 1100ms infinite ease;}
+.r5_c19 .t_wall {animation: twall 4s 1100ms infinite ease;}
+.r5_c19 .r_wall {animation: rwall 4s 1100ms infinite ease;}
+
+.r5_c18 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r5_c18 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r5_c18 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r5_c17 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r5_c17 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r5_c17 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r5_c16 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r5_c16 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r5_c16 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r5_c15 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r5_c15 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r5_c15 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r5_c14 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r5_c14 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r5_c14 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r5_c13 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r5_c13 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r5_c13 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r5_c12 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r5_c12 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r5_c12 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r5_c11 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r5_c11 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r5_c11 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r5_c10 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r5_c10 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r5_c10 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r5_c9 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r5_c9 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r5_c9 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r5_c8 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r5_c8 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r5_c8 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r5_c7 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r5_c7 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r5_c7 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r5_c6 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r5_c6 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r5_c6 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r5_c5 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r5_c5 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r5_c5 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r5_c4 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r5_c4 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r5_c4 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r5_c3 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r5_c3 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r5_c3 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+.r5_c2 .f_wall {animation: fwall 4s 2800ms infinite ease;}
+.r5_c2 .t_wall {animation: twall 4s 2800ms infinite ease;}
+.r5_c2 .r_wall {animation: rwall 4s 2800ms infinite ease;}
+
+.r5_c1 .f_wall {animation: fwall 4s 2900ms infinite ease;}
+.r5_c1 .t_wall {animation: twall 4s 2900ms infinite ease;}
+.r5_c1 .r_wall {animation: rwall 4s 2900ms infinite ease;}
+
+/*=========== ROW 4 =============*/
+
+.r4_c20 .f_wall {animation: fwall 4s 1200ms infinite ease;}
+.r4_c20 .t_wall {animation: twall 4s 1200ms infinite ease;}
+.r4_c20 .r_wall {animation: rwall 4s 1200ms infinite ease;}
+
+.r4_c19 .f_wall {animation: fwall 4s 1300ms infinite ease;}
+.r4_c19 .t_wall {animation: twall 4s 1300ms infinite ease;}
+.r4_c19 .r_wall {animation: rwall 4s 1300ms infinite ease;}
+
+.r4_c18 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r4_c18 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r4_c18 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r4_c17 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r4_c17 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r4_c17 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r4_c16 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r4_c16 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r4_c16 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r4_c15 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r4_c15 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r4_c15 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r4_c14 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r4_c14 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r4_c14 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r4_c13 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r4_c13 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r4_c13 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r4_c12 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r4_c12 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r4_c12 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r4_c11 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r4_c11 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r4_c11 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r4_c10 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r4_c10 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r4_c10 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r4_c9 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r4_c9 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r4_c9 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r4_c8 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r4_c8 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r4_c8 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r4_c7 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r4_c7 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r4_c7 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r4_c6 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r4_c6 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r4_c6 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r4_c5 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r4_c5 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r4_c5 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+.r4_c4 .f_wall {animation: fwall 4s 2800ms infinite ease;}
+.r4_c4 .t_wall {animation: twall 4s 2800ms infinite ease;}
+.r4_c4 .r_wall {animation: rwall 4s 2800ms infinite ease;}
+
+.r4_c3 .f_wall {animation: fwall 4s 2900ms infinite ease;}
+.r4_c3 .t_wall {animation: twall 4s 2900ms infinite ease;}
+.r4_c3 .r_wall {animation: rwall 4s 2900ms infinite ease;}
+
+.r4_c2 .f_wall {animation: fwall 4s 3000ms infinite ease;}
+.r4_c2 .t_wall {animation: twall 4s 3000ms infinite ease;}
+.r4_c2 .r_wall {animation: rwall 4s 3000ms infinite ease;}
+
+.r4_c1 .f_wall {animation: fwall 4s 3100ms infinite ease;}
+.r4_c1 .t_wall {animation: twall 4s 3100ms infinite ease;}
+.r4_c1 .r_wall {animation: rwall 4s 3100ms infinite ease;}
+
+/*=========== ROW 3 =============*/
+
+.r3_c20 .f_wall {animation: fwall 4s 1400ms infinite ease;}
+.r3_c20 .t_wall {animation: twall 4s 1400ms infinite ease;}
+.r3_c20 .r_wall {animation: rwall 4s 1400ms infinite ease;}
+
+.r3_c19 .f_wall {animation: fwall 4s 1500ms infinite ease;}
+.r3_c19 .t_wall {animation: twall 4s 1500ms infinite ease;}
+.r3_c19 .r_wall {animation: rwall 4s 1500ms infinite ease;}
+
+.r3_c18 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r3_c18 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r3_c18 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r3_c17 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r3_c17 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r3_c17 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r3_c16 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r3_c16 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r3_c16 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r3_c15 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r3_c15 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r3_c15 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r3_c14 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r3_c14 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r3_c14 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r3_c13 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r3_c13 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r3_c13 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r3_c12 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r3_c12 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r3_c12 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r3_c11 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r3_c11 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r3_c11 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r3_c10 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r3_c10 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r3_c10 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r3_c9 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r3_c9 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r3_c9 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r3_c8 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r3_c8 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r3_c8 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r3_c7 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r3_c7 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r3_c7 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+.r3_c6 .f_wall {animation: fwall 4s 2800ms infinite ease;}
+.r3_c6 .t_wall {animation: twall 4s 2800ms infinite ease;}
+.r3_c6 .r_wall {animation: rwall 4s 2800ms infinite ease;}
+
+.r3_c5 .f_wall {animation: fwall 4s 2900ms infinite ease;}
+.r3_c5 .t_wall {animation: twall 4s 2900ms infinite ease;}
+.r3_c5 .r_wall {animation: rwall 4s 2900ms infinite ease;}
+
+.r3_c4 .f_wall {animation: fwall 4s 3000ms infinite ease;}
+.r3_c4 .t_wall {animation: twall 4s 3000ms infinite ease;}
+.r3_c4 .r_wall {animation: rwall 4s 3000ms infinite ease;}
+
+.r3_c3 .f_wall {animation: fwall 4s 3100ms infinite ease;}
+.r3_c3 .t_wall {animation: twall 4s 3100ms infinite ease;}
+.r3_c3 .r_wall {animation: rwall 4s 3100ms infinite ease;}
+
+.r3_c2 .f_wall {animation: fwall 4s 3200ms infinite ease;}
+.r3_c2 .t_wall {animation: twall 4s 3200ms infinite ease;}
+.r3_c2 .r_wall {animation: rwall 4s 3200ms infinite ease;}
+
+.r3_c1 .f_wall {animation: fwall 4s 3300ms infinite ease;}
+.r3_c1 .t_wall {animation: twall 4s 3300ms infinite ease;}
+.r3_c1 .r_wall {animation: rwall 4s 3300ms infinite ease;}
+
+/*=========== ROW 2 =============*/
+
+.r2_c20 .f_wall {animation: fwall 4s 1600ms infinite ease;}
+.r2_c20 .t_wall {animation: twall 4s 1600ms infinite ease;}
+.r2_c20 .r_wall {animation: rwall 4s 1600ms infinite ease;}
+
+.r2_c19 .f_wall {animation: fwall 4s 1700ms infinite ease;}
+.r2_c19 .t_wall {animation: twall 4s 1700ms infinite ease;}
+.r2_c19 .r_wall {animation: rwall 4s 1700ms infinite ease;}
+
+.r2_c18 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r2_c18 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r2_c18 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r2_c17 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r2_c17 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r2_c17 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r2_c16 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r2_c16 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r2_c16 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r2_c15 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r2_c15 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r2_c15 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r2_c14 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r2_c14 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r2_c14 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r2_c13 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r2_c13 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r2_c13 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r2_c12 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r2_c12 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r2_c12 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r2_c11 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r2_c11 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r2_c11 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r2_c10 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r2_c10 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r2_c10 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r2_c9 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r2_c9 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r2_c9 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+.r2_c8 .f_wall {animation: fwall 4s 2800ms infinite ease;}
+.r2_c8 .t_wall {animation: twall 4s 2800ms infinite ease;}
+.r2_c8 .r_wall {animation: rwall 4s 2800ms infinite ease;}
+
+.r2_c7 .f_wall {animation: fwall 4s 2900ms infinite ease;}
+.r2_c7 .t_wall {animation: twall 4s 2900ms infinite ease;}
+.r2_c7 .r_wall {animation: rwall 4s 2900ms infinite ease;}
+
+.r2_c6 .f_wall {animation: fwall 4s 3000ms infinite ease;}
+.r2_c6 .t_wall {animation: twall 4s 3000ms infinite ease;}
+.r2_c6 .r_wall {animation: rwall 4s 3000ms infinite ease;}
+
+.r2_c5 .f_wall {animation: fwall 4s 3100ms infinite ease;}
+.r2_c5 .t_wall {animation: twall 4s 3100ms infinite ease;}
+.r2_c5 .r_wall {animation: rwall 4s 3100ms infinite ease;}
+
+.r2_c4 .f_wall {animation: fwall 4s 3200ms infinite ease;}
+.r2_c4 .t_wall {animation: twall 4s 3200ms infinite ease;}
+.r2_c4 .r_wall {animation: rwall 4s 3200ms infinite ease;}
+
+.r2_c3 .f_wall {animation: fwall 4s 3300ms infinite ease;}
+.r2_c3 .t_wall {animation: twall 4s 3300ms infinite ease;}
+.r2_c3 .r_wall {animation: rwall 4s 3300ms infinite ease;}
+
+.r2_c2 .f_wall {animation: fwall 4s 3400ms infinite ease;}
+.r2_c2 .t_wall {animation: twall 4s 3400ms infinite ease;}
+.r2_c2 .r_wall {animation: rwall 4s 3400ms infinite ease;}
+
+.r2_c1 .f_wall {animation: fwall 4s 3500ms infinite ease;}
+.r2_c1 .t_wall {animation: twall 4s 3500ms infinite ease;}
+.r2_c1 .r_wall {animation: rwall 4s 3500ms infinite ease;}
+
+/*=========== ROW 1 =============*/
+
+.r1_c20 .f_wall {animation: fwall 4s 1800ms infinite ease;}
+.r1_c20 .t_wall {animation: twall 4s 1800ms infinite ease;}
+.r1_c20 .r_wall {animation: rwall 4s 1800ms infinite ease;}
+
+.r1_c19 .f_wall {animation: fwall 4s 1900ms infinite ease;}
+.r1_c19 .t_wall {animation: twall 4s 1900ms infinite ease;}
+.r1_c19 .r_wall {animation: rwall 4s 1900ms infinite ease;}
+
+.r1_c18 .f_wall {animation: fwall 4s 2000ms infinite ease;}
+.r1_c18 .t_wall {animation: twall 4s 2000ms infinite ease;}
+.r1_c18 .r_wall {animation: rwall 4s 2000ms infinite ease;}
+
+.r1_c17 .f_wall {animation: fwall 4s 2100ms infinite ease;}
+.r1_c17 .t_wall {animation: twall 4s 2100ms infinite ease;}
+.r1_c17 .r_wall {animation: rwall 4s 2100ms infinite ease;}
+
+.r1_c16 .f_wall {animation: fwall 4s 2200ms infinite ease;}
+.r1_c16 .t_wall {animation: twall 4s 2200ms infinite ease;}
+.r1_c16 .r_wall {animation: rwall 4s 2200ms infinite ease;}
+
+.r1_c15 .f_wall {animation: fwall 4s 2300ms infinite ease;}
+.r1_c15 .t_wall {animation: twall 4s 2300ms infinite ease;}
+.r1_c15 .r_wall {animation: rwall 4s 2300ms infinite ease;}
+
+.r1_c14 .f_wall {animation: fwall 4s 2400ms infinite ease;}
+.r1_c14 .t_wall {animation: twall 4s 2400ms infinite ease;}
+.r1_c14 .r_wall {animation: rwall 4s 2400ms infinite ease;}
+
+.r1_c13 .f_wall {animation: fwall 4s 2500ms infinite ease;}
+.r1_c13 .t_wall {animation: twall 4s 2500ms infinite ease;}
+.r1_c13 .r_wall {animation: rwall 4s 2500ms infinite ease;}
+
+.r1_c12 .f_wall {animation: fwall 4s 2600ms infinite ease;}
+.r1_c12 .t_wall {animation: twall 4s 2600ms infinite ease;}
+.r1_c12 .r_wall {animation: rwall 4s 2600ms infinite ease;}
+
+.r1_c11 .f_wall {animation: fwall 4s 2700ms infinite ease;}
+.r1_c11 .t_wall {animation: twall 4s 2700ms infinite ease;}
+.r1_c11 .r_wall {animation: rwall 4s 2700ms infinite ease;}
+
+.r1_c10 .f_wall {animation: fwall 4s 2800ms infinite ease;}
+.r1_c10 .t_wall {animation: twall 4s 2800ms infinite ease;}
+.r1_c10 .r_wall {animation: rwall 4s 2800ms infinite ease;}
+
+.r1_c9 .f_wall {animation: fwall 4s 2900ms infinite ease;}
+.r1_c9 .t_wall {animation: twall 4s 2900ms infinite ease;}
+.r1_c9 .r_wall {animation: rwall 4s 2900ms infinite ease;}
+
+.r1_c8 .f_wall {animation: fwall 4s 3000ms infinite ease;}
+.r1_c8 .t_wall {animation: twall 4s 3000ms infinite ease;}
+.r1_c8 .r_wall {animation: rwall 4s 3000ms infinite ease;}
+
+.r1_c7 .f_wall {animation: fwall 4s 3100ms infinite ease;}
+.r1_c7 .t_wall {animation: twall 4s 3100ms infinite ease;}
+.r1_c7 .r_wall {animation: rwall 4s 3100ms infinite ease;}
+
+.r1_c6 .f_wall {animation: fwall 4s 3200ms infinite ease;}
+.r1_c6 .t_wall {animation: twall 4s 3200ms infinite ease;}
+.r1_c6 .r_wall {animation: rwall 4s 3200ms infinite ease;}
+
+.r1_c5 .f_wall {animation: fwall 4s 3300ms infinite ease;}
+.r1_c5 .t_wall {animation: twall 4s 3300ms infinite ease;}
+.r1_c5 .r_wall {animation: rwall 4s 3300ms infinite ease;}
+
+.r1_c4 .f_wall {animation: fwall 4s 3400ms infinite ease;}
+.r1_c4 .t_wall {animation: twall 4s 3400ms infinite ease;}
+.r1_c4 .r_wall {animation: rwall 4s 3400ms infinite ease;}
+
+.r1_c3 .f_wall {animation: fwall 4s 3500ms infinite ease;}
+.r1_c3 .t_wall {animation: twall 4s 3500ms infinite ease;}
+.r1_c3 .r_wall {animation: rwall 4s 3500ms infinite ease;}
+
+.r1_c2 .f_wall {animation: fwall 4s 3600ms infinite ease;}
+.r1_c2 .t_wall {animation: twall 4s 3600ms infinite ease;}
+.r1_c2 .r_wall {animation: rwall 4s 3600ms infinite ease;}
+
+.r1_c1 .f_wall {animation: fwall 4s 3700ms infinite ease;}
+.r1_c1 .t_wall {animation: twall 4s 3700ms infinite ease;}
+.r1_c1 .r_wall {animation: rwall 4s 3700ms infinite ease;}
